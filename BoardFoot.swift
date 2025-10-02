@@ -12,7 +12,7 @@
 // Needed for String(format:)
 import Foundation
 // Constant that defines how many cubic inches are within a Board Foot.
-let volume:Double = 144.0
+let volume: Double = 144.0
 
 // Function that solves and returns the length of a Board Foot,
 // given the width and height.
@@ -43,7 +43,7 @@ func main() {
             print("\u{001B}[0;31mERROR: INPUTS MUST BE GREATER THAN 0.")
         } else {
             // Call the function to solve for length
-            let length:Double = calculateBoardFoot(width: width, height: height)
+            let length: Double = calculateBoardFoot(width: width, height: height)
             // Display the length [IN YELLOW]
             print(String(format: "\u{001B}[0;33mSolved Length: %.6f", length), terminator: "")
             print(" inches.")
